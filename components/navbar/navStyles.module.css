@@ -1,0 +1,30 @@
+.link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+  }
+.active {
+    color: darksalmon;
+    pointer-events: none;
+  }
+
+.navMain{
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+
+  .navMain{
+    display: flex;
+    padding: 2%;
+  }
+
+  .navMainDiv{
+    padding: 4%;
+  }
+
+  .collapse{
+  }
+}
