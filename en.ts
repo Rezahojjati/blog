@@ -6,7 +6,7 @@ import {
 import * as contentful from "contentful";
 
 export const client = contentful.createClient({
-  space: CONTENTFUL_SPACE_ID,
-  accessToken: CONTENTFUL_ACCESS_TOKEN,
+  space: "qhdh9sklg8qf",
+  accessToken: "po50xhtRQFkeTbtQ7qfauADzXL1mM-wDUD0WBsVM",
   environment: CONTENTFUL_ENV,
 });
