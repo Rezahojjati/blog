@@ -7,7 +7,16 @@ export default function SubscribeBar() {
       <p className={styles.searchTitle}>Subscribe</p>
       <div className={styles.searchDiv}>
         <input placeholder="me@email.com" className="form-control" />
-        <button className="btn btn-warning">Subscribe</button>
+        <button
+          className="btn btn-warning"
+          style={{
+            backgroundColor: "#33e1ff",
+            borderColor: "#33e1ff",
+            color: "white",
+          }}
+        >
+          Subscribe
+        </button>
       </div>
     </div>
   );

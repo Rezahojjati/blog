@@ -7,7 +7,12 @@ export default function SearchBar() {
       <p className={styles.searchTitle}>Search</p>
       <div className={styles.searchDiv}>
         <input className="form-control" />
-        <button className="btn btn-primary">Search</button>
+        <button
+          className="btn btn-primary"
+          style={{ backgroundColor: "#33e1ff", borderColor: "#33e1ff" }}
+        >
+          Search
+        </button>
       </div>
     </div>
   );
