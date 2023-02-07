@@ -28,6 +28,10 @@ export const getStaticProps = async () => {
     content_type: "blog",
   });
 
+  if (!allBlogs) {
+    throw new Error(`Failed to fetch posts`);
+  }
+
   let blogArray: PostProps[] = [];
   allBlogs.items.forEach((item) => {
     blogArray.push(item.fields);
@@ -37,5 +41,6 @@ export const getStaticProps = async () => {
     props: {
       blogs: blogArray,
     },
+    revalidate: 10,
   };
 };
