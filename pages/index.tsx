@@ -1,4 +1,4 @@
-import type { InferGetStaticPropsType, NextPage } from "next";
+import type { InferGetServerSidePropsType, NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import "bootstrap/dist/css/bootstrap.css";
 import LeftBar from "../components/Home/LeftBar";
@@ -9,7 +9,7 @@ import Header from "../components/header";
 
 export default function Home({
   blogs,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <div className={styles.container}>
       <Header
@@ -23,7 +23,7 @@ export default function Home({
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const allBlogs = await client.getEntries<PostProps>({
     content_type: "blog",
   });
