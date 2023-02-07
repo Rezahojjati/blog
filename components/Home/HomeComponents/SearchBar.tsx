@@ -9,7 +9,11 @@ export default function SearchBar() {
         <input className="form-control" />
         <button
           className="btn btn-primary"
-          style={{ backgroundColor: "#33e1ff", borderColor: "#33e1ff" }}
+          style={{
+            backgroundColor: "#33e1ff",
+            borderColor: "#33e1ff",
+            fontFamily: "Mulish , sans-serif",
+          }}
         >
           Search
         </button>

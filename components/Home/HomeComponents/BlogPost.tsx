@@ -13,7 +13,7 @@ function BlogPost(props: PostProps) {
   return (
     <div>
       <article className={styles.main}>
-        <h1>{props.title}</h1>
+        <h1 className={styles.blogTitle}>{props.title}</h1>
         {props.image && <ContentfulImage {...props.image} />}
         <RichText body={props.body} />
         <ReflectionQuestions body={props.reflectionQuestions} />

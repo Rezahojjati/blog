@@ -13,6 +13,7 @@ export default function SubscribeBar() {
             backgroundColor: "#33e1ff",
             borderColor: "#33e1ff",
             color: "white",
+            fontFamily: "Mulish , sans-serif",
           }}
         >
           Subscribe
