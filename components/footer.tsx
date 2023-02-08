@@ -12,8 +12,8 @@ export default function Footer(props: FooterProps) {
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="32"
+              height="32"
               fill="currentColor"
               className="bi bi-facebook"
               viewBox="0 0 16 16"
@@ -24,8 +24,8 @@ export default function Footer(props: FooterProps) {
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="32"
+              height="32"
               fill="currentColor"
               className="bi bi-twitter"
               viewBox="0 0 16 16"
@@ -36,8 +36,8 @@ export default function Footer(props: FooterProps) {
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="32"
+              height="32"
               fill="currentColor"
               className="bi bi-linkedin"
               viewBox="0 0 16 16"
@@ -48,8 +48,8 @@ export default function Footer(props: FooterProps) {
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="32"
+              height="32"
               fill="currentColor"
               className="bi bi-link-45deg"
               viewBox="0 0 16 16"
