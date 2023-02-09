@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "next/link";
-import classNames from "classnames";
 
 import navStyles from "./navStyles.module.css";
 import { Navbar as _Navbar, Nav, Container } from "react-bootstrap";

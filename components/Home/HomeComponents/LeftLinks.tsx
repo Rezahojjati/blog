@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../../styles/Home.module.css";
+import VMetricsLogo from "./VMetricsLogo";
 
 export default function LeftLinks() {
   return (
@@ -15,6 +16,7 @@ export default function LeftLinks() {
         transformations and the realization of peak experiences, more
         consistently.
       </p>
+      <VMetricsLogo />
     </div>
   );
 }
