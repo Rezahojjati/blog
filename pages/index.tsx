@@ -17,7 +17,7 @@ export default function Home({
         description="V-Metrics"
         linkUrl=""
       ></Header>
-      <LeftBar />
+      <LeftBar blogs={blogs} />
       <RightBar blogs={blogs} />
     </div>
   );

@@ -8,10 +8,6 @@ type RightBArProps = {
 };
 
 export default function RightBar(props: RightBArProps) {
-  useEffect(() => {
-    console.log(props.blogs);
-  }, [props]);
-
   const mapped = props.blogs.map((blog, index) => {
     return <BlogPost key={blog.title} {...blog} />;
   });

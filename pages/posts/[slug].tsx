@@ -9,25 +9,12 @@ import RichText from "../../components/richText";
 import Heading from "../../components/heading";
 import Footer from "../../components/footer";
 import { PostProps } from "../../models/models";
+import BlogPost from "../../components/Home/HomeComponents/BlogPost";
 
 export default function Posts(props: PostProps) {
   // @ts-ignore
   const metaDescription = props.body.content[0].content[0].value;
-  return (
-    <Container>
-      <article className={styles.main}>
-        <Header
-          description={metaDescription}
-          title={props.title}
-          linkUrl="/favicon.ico"
-        />
-        <Heading heading={props.title} />
-        {props.image && <ContentfulImage {...props.image} />}
-        <RichText body={props.body} />
-        <Footer author={props.author} createdAt={props.createdAt} />
-      </article>
-    </Container>
-  );
+  return <BlogPost key={props.title} {...props} />;
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
