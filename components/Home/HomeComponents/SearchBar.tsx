@@ -21,7 +21,7 @@ export default function SearchBar(props: SearchBArProps) {
     const result: any = [];
     const indexesAdded: number[] = [];
     if (search) {
-      blogs?.forEach((blog, index) => {
+      props.blogs?.forEach((blog, index) => {
         if (
           blog.title.toLowerCase().includes(search.toLocaleLowerCase()) &&
           !indexesAdded.includes(index)
@@ -39,9 +39,8 @@ export default function SearchBar(props: SearchBArProps) {
         });
       });
     }
-    if (result.length > 0) {
-      setSearchResult(result);
-    }
+    setSearchResult(result);
+
     router.push({
       pathname: "/search",
       query: { search: search, result: JSON.stringify(result) },
