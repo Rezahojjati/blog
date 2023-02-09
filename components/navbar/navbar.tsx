@@ -32,7 +32,7 @@ export default function Navbar(props: NavProps) {
       >
         <Nav className="lg" navbarScroll>
           <div className={navStyles.navMainDiv}>
-            <SearchBar />
+            <SearchBar blogs={props.blogs} />
             <SubscribeBar />
             <LeftLinks />
           </div>

@@ -26,10 +26,12 @@ export type SEOProps = {
   title: string;
   description: string;
   active: string;
+  blogs: PostProps[];
 };
 
 export type NavProps = {
   activeItem?: "home" | "posts" | "contact";
+  blogs: PostProps[];
 };
 
 export type HeaderProps = {

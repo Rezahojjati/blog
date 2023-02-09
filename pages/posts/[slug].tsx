@@ -1,20 +1,17 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-
 import { client } from "../../en";
 import styles from "../../styles/Home.module.css";
-import Container from "../../components/container";
-import ContentfulImage from "../../components/contentfulImage";
-import Header from "../../components/header";
-import RichText from "../../components/richText";
-import Heading from "../../components/heading";
-import Footer from "../../components/footer";
 import { PostProps } from "../../models/models";
 import BlogPost from "../../components/Home/HomeComponents/BlogPost";
 
 export default function Posts(props: PostProps) {
   // @ts-ignore
   const metaDescription = props.body.content[0].content[0].value;
-  return <BlogPost key={props.title} {...props} />;
+  return (
+    <div className={styles.blogPostDiv}>
+      <BlogPost key={props.title} {...props} />
+    </div>
+  );
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {

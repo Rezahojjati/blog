@@ -30,6 +30,7 @@ function SearchHome() {
       ></Header>
       <LeftBar blogs={results} />
       <div className={styles.homeRightDiv}>
+        <p>Search: {search}</p>
         {results.map((blog, index) => {
           return (
             <div key={index}>

@@ -2,16 +2,16 @@
   padding: 0 0 0rem 1rem;
   display: flex;
   flex-direction: row;
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  height:100%;
-  width:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.homeLeftDiv{
+.homeLeftDiv {
   width: 28%;
   padding: 1%;
   align-items: center;
@@ -20,7 +20,7 @@
   overflow-y: scroll;
 }
 
-.homeRightDiv{
+.homeRightDiv {
   width: 72%;
   overflow-y: scroll;
   padding: 0 4rem;
@@ -36,8 +36,8 @@
   align-items: center;
 } */
 
-.blogTitle{
-  font-family: 'League Spartan', sans-serif;
+.blogTitle {
+  font-family: "League Spartan", sans-serif;
 }
 
 .footer {
@@ -136,96 +136,94 @@
   margin-left: 0.5rem;
 }
 
-
 /* searchbars */
 .searchTitle {
   font-weight: 600;
 }
 
-.searchDiv{
+.searchDiv {
   display: flex;
   flex-direction: row;
 }
 
 /* left links */
-.linkDiv{
+.linkDiv {
   margin-top: 30px;
 }
 
-.linkDiv h4{
+.linkDiv h4 {
   margin-top: 25px;
 }
 
-.linkDiv p{
+.linkDiv p {
   margin-bottom: 5px;
 }
 
-.imageContainer{
+.imageContainer {
   width: 60vw;
   height: 60vh;
   position: relative;
 }
 
-.refQuestions{
+.refQuestions {
   display: flex;
   flex-direction: row;
   margin: 30px 0;
 }
 
-.habQuestions{
+.habQuestions {
   display: flex;
   flex-direction: row;
   margin: 30px 0;
 }
 
-.refQuestionsBody{
+.refQuestionsBody {
   padding: 3%;
-  border: #E5FBFF 5px solid;
+  border: #e5fbff 5px solid;
   border-radius: 8px;
-  box-shadow: 5px 10px #E5FBFF;
+  box-shadow: 5px 10px #e5fbff;
 }
 
-.refQuestionsImgDiv{
-  
+.refQuestionsImgDiv {
 }
 
-.resourcesMainDiv{
+.resourcesMainDiv {
   display: flex;
   flex-direction: row;
   margin: 7% 0%;
 }
 
-.resourcesDiv{
+.resourcesDiv {
   width: 50%;
-  background-color: #E5FBFF;
+  background-color: #e5fbff;
   margin: 0 1%;
   padding: 1%;
   border-radius: 8px;
 }
 
-.resourcesDiv h3{
+.resourcesDiv h3 {
   font-size: 20px;
   font-weight: 600;
 }
 
-.footerParent{
+.footerParent {
   border-top: 3px black solid;
   margin-bottom: 5%;
 }
 
-.dateAndIconDiv{
+.dateAndIconDiv {
   display: flex;
   flex-direction: row;
 }
 
-.iconDiv{
+.iconDiv {
   display: flex;
   flex-direction: row;
   margin-left: auto;
   margin-right: 3%;
 }
 
-.iconDiv div{
+.iconDiv div {
   margin: 0 0 0 5%;
 }
 
@@ -234,53 +232,57 @@
     width: 100%;
     flex-direction: column;
   }
-  .homeLeftDiv{
+  .homeLeftDiv {
     display: none;
   }
-  
-  .homeRightDiv{
+
+  .homeRightDiv {
     width: 100%;
     overflow-y: scroll;
-    padding: 6.5rem 0 ;
+    padding: 6.5rem 0;
   }
 
-  .imageContainer{
+  .imageContainer {
     width: 70vw;
     height: 45vh;
     position: relative;
   }
 
-  .main{
+  .main {
     padding: 10px;
   }
 
-  .resourcesMainDiv{
+  .resourcesMainDiv {
     display: flex;
     flex-direction: column;
   }
 
-  .resourcesDiv{
+  .resourcesDiv {
     width: 100%;
-    background-color: #E5FBFF;
+    background-color: #e5fbff;
     margin: 5% 0;
     padding: 4%;
   }
 
-  .refQuestions{
+  .refQuestions {
     flex-direction: column;
     margin: 2%;
     align-items: center;
   }
 
-  .habQuestions{
+  .habQuestions {
     flex-direction: column-reverse;
     margin: 2%;
     align-items: center;
   }
-  
-  .imageContainer{
+
+  .imageContainer {
     width: 90%;
     height: 200px;
     position: relative;
+  }
+
+  .blogPostDiv {
+    margin-top: 120px;
   }
 }
