@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps<SEOProps>) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar blogs={pageProps.blogs} activeItem={pageProps.active} />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
