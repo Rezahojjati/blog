@@ -23,7 +23,7 @@
 .homeRightDiv {
   width: 72%;
   overflow-y: scroll;
-  padding: 0 4rem;
+  padding: 1rem 4rem;
 }
 
 /* .main {
@@ -284,5 +284,14 @@
 
   .blogPostDiv {
     margin-top: 120px;
+  }
+
+  .iconDiv {
+    margin-right: 0;
+    padding-right: 8%;
+  }
+
+  .container {
+    padding: 0;
   }
 }

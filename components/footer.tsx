@@ -5,7 +5,7 @@ import moment from "moment";
 export default function Footer(props: FooterProps) {
   return (
     <div className={styles.footerParent}>
-      <p>By: {props.author}</p>
+      <p style={{ visibility: "hidden" }}>By: {props.author}</p>
       <div className={styles.dateAndIconDiv}>
         <h4>{moment(props.createdAt).format("MMMM Do YYYY")}</h4>
         <div className={styles.iconDiv}>
