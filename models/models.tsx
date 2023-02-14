@@ -43,6 +43,7 @@ export type HeaderProps = {
 export type FooterProps = {
   author: string | undefined;
   createdAt: string;
+  slug: string;
 };
 
 export type HeadingProps = {

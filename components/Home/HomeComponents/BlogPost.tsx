@@ -32,7 +32,11 @@ function BlogPost(props: PostProps) {
             />
           )}
         </div>
-        <Footer author={props.author} createdAt={props.createdAt} />
+        <Footer
+          slug={props.slug}
+          author={props.author}
+          createdAt={props.createdAt}
+        />
       </article>
     </div>
   );
