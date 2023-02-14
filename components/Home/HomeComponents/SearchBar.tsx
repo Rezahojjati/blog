@@ -49,7 +49,7 @@ export default function SearchBar(props: SearchBArProps) {
 
   return (
     <div>
-      <p className={styles.searchTitle}>Search</p>
+      <p className={styles.searchTitle}>SEARCH</p>
       <div className={styles.searchDiv}>
         <input
           className="form-control"

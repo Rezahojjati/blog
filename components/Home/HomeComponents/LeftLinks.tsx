@@ -26,12 +26,15 @@ export default function LeftLinks() {
           alignItems: "flex-start",
         }}
       >
-        <Image
-          alt="Image Alt"
-          src={"/vmetrics.png"}
-          layout="fill"
-          objectFit="contain" // Scale your image down to fit into the container
-        />
+        <a href="https://www.v-metrics.com/">
+          <Image
+            alt="Image Alt"
+            src={"/vmetrics.png"}
+            layout="fill"
+            objectFit="contain" // Scale your image down to fit into the container
+            objectPosition="left bottom"
+          />
+        </a>
       </div>
     </div>
   );

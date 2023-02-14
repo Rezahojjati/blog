@@ -22,9 +22,11 @@ export default function Footer(props: FooterProps) {
 
   return (
     <div className={styles.footerParent}>
-      <p style={{ visibility: "hidden" }}>By: {props.author}</p>
+      <p style={{ visibility: "hidden", display: "none" }}>
+        By: {props.author}
+      </p>
       <div className={styles.dateAndIconDiv}>
-        <h4>{moment(props.createdAt).format("MMMM Do YYYY")}</h4>
+        <h4>{moment(props.createdAt).format("MMMM Do YYYY").toUpperCase()}</h4>
         <div className={styles.iconDiv}>
           <div>
             <a

@@ -27,7 +27,7 @@ export default function SubscribeBar() {
 
   return (
     <div style={{ marginTop: "15px" }}>
-      <p className={styles.searchTitle}>Subscribe</p>
+      <p className={styles.searchTitle}>SUBSCRIBE</p>
       <div className={styles.searchDiv}>
         <input
           placeholder="me@email.com"

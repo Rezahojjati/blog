@@ -24,7 +24,6 @@ export default function LeftBar(props: LeftBarProps) {
         />
       </div>
       <div>
-        <h3>V-Metrics Blog</h3>
         <SearchBar blogs={props.blogs} />
         <SubscribeBar />
         <LeftLinks />
