@@ -52,7 +52,7 @@ export default function SubscribeBar() {
         </button>
       </div> */}
       <iframe
-        style={{ width: "100%", height: "300px" }}
+        style={{ width: "100%", height: "300px", marginTop: "-20px" }}
         width="100%"
         height={"100%"}
         src="https://cdn.forms-content.sg-form.com/769f8acb-a8d4-11ed-9b7d-ce1828523876"
