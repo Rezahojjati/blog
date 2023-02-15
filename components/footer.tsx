@@ -26,7 +26,7 @@ export default function Footer(props: FooterProps) {
         By: {props.author}
       </p>
       <div className={styles.dateAndIconDiv}>
-        <h4>{moment(props.createdAt).format("MMMM Do YYYY").toUpperCase()}</h4>
+        <h6>{moment(props.createdAt).format("MMMM Do YYYY").toUpperCase()}</h6>
         <div className={styles.iconDiv}>
           <div>
             <a
@@ -36,8 +36,8 @@ export default function Footer(props: FooterProps) {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="26"
+                height="26"
                 fill="currentColor"
                 className="bi bi-facebook"
                 viewBox="0 0 16 16"
@@ -56,8 +56,8 @@ export default function Footer(props: FooterProps) {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="26"
+                height="26"
                 fill="currentColor"
                 className="bi bi-twitter"
                 viewBox="0 0 16 16"
@@ -74,8 +74,8 @@ export default function Footer(props: FooterProps) {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="26"
+                height="26"
                 fill="currentColor"
                 className="bi bi-linkedin"
                 viewBox="0 0 16 16"
@@ -92,8 +92,8 @@ export default function Footer(props: FooterProps) {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="26"
+              height="26"
               fill="currentColor"
               className="bi bi-link-45deg"
               viewBox="0 0 16 16"

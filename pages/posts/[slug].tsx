@@ -8,7 +8,10 @@ export default function Posts(props: PostProps) {
   // @ts-ignore
   const metaDescription = props.body.content[0].content[0].value;
   return (
-    <div className={styles.blogPostDiv}>
+    <div
+      style={{ paddingLeft: "2%", paddingRight: "2%" }}
+      className={styles.blogPostDiv}
+    >
       <BlogPost key={props.title} {...props} />
     </div>
   );

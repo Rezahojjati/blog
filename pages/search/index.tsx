@@ -3,12 +3,12 @@ import { useRouter } from "next/router";
 import { PostProps } from "../../models/models";
 import BlogPreview from "../../components/blogPreview";
 import Header from "../../components/header";
-import LeftBar from "../../components/Home/LeftBar";
 import styles from "../../styles/Home.module.css";
 import { client } from "../../en";
 import SearchBar from "../../components/Home/HomeComponents/SearchBar";
 import SubscribeBar from "../../components/Home/HomeComponents/SubscribeBar";
 import LeftLinks from "../../components/Home/HomeComponents/LeftLinks";
+import Image from "next/image";
 
 export default function SearchHome(props: { blogs: PostProps[] }) {
   const [search, setSearch] = useState<any>("");
@@ -37,13 +37,22 @@ export default function SearchHome(props: { blogs: PostProps[] }) {
         linkUrl=""
       ></Header>
       <div className={styles.homeLeftDiv}>
-        <h3>V-Metrics Blog</h3>
+        <div
+          style={{ position: "relative", width: "100%", paddingBottom: "40%" }}
+        >
+          <Image
+            alt="Image Alt"
+            src={"/logo.png"}
+            layout="fill"
+            objectFit="contain" // Scale your image down to fit into the container
+          />
+        </div>
         <SearchBar blogs={allBlogs} />
         <SubscribeBar />
         <LeftLinks />
       </div>
       <div className={styles.homeRightDiv}>
-        <p>Search: {search}</p>
+        <h4>Search: {search}</h4>
         {results.map((blog, index) => {
           return (
             <div key={index}>
